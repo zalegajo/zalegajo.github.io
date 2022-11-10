@@ -16,8 +16,7 @@
 	{
 		const btn = document.getElementById('tohide');
 		btn.style.display = 'block';
-	}
-	
+	}	
 	</script>
     <title>Zalegajo</title>
 <head>
@@ -34,7 +33,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dist/style.css"> 
     <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
-
+	<script src="app/js/script.js"></script>
 </head>
 
 
@@ -73,7 +72,8 @@
 					<div class="popup">
 					<h2>Status Serwera</h2>
 					<a class="close" onclick="ShowAll();" href="#">&times;</a>
-
+						<script src="app/js/script.js"></script>
+					<div style="color: black;" id="rest">Loading ...</div>
 					</div>
 				</div>
 	
@@ -85,13 +85,11 @@
             <div class="animate__animated animate__bounceIn animate__delay-1s">
                 <a href="#aktualnosci"><button class="btn1" onclick="HideALL();"> Aktualności </button></a>
                 <a href="#adres_serwera"><button class="btn2" onclick="GetIPAdr(); HideALL();"> Adres IP </button></a>
-                <a href="#status"><button class="btn3" onclick="HideALL();"> Status </button></a>
+                <a href="#status"><button class="btn3" onclick="HideALL(); CheckStatus();"> Status </button></a>
 			</div>
 		</div>
 	</div>
 
-
-    <script src="/app/js/script.js"></script>
     <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
 	
 	
