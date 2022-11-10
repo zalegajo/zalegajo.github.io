@@ -1,4 +1,4 @@
-
+alert("test");
 					var url = "https://api.minetools.eu/ping/zalegajo.maxc.pl/27586";
  
 					$.getJSON(url, function(r) {
