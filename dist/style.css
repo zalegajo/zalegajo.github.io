@@ -69,13 +69,7 @@ h2 {
   --green: #3fd50f;
   --yellow: #ecc900;
   --discord: #5865f2;
-  --instagram1: #cf0057;
-  --instagram2: #8a2bc9;
-  --instagram3: #f2ae4a;
-  --tiktok: #e71c4f;
-  --youtube: #f70f17;
-  --facebook: #4064ac;
-  --twitch: #9046ff;
+  --red: #e74c3c;
 }
 
 button {
@@ -134,7 +128,7 @@ button:hover {
 }
 
 .btn4 {
-  background-color: #e74c3c;
+  background-color: var(--red);
   -webkit-filter: drop-shadow(8px 8px 1px #811a0f);
           filter: drop-shadow(8px 8px 1px #811a0f);
 }
