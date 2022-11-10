@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <script>
+	
 	function GetIPAdr()
     {
 	    navigator.clipboard.writeText('zalegajo.maxc.pl');
@@ -10,12 +11,17 @@
 	{
 		const btn = document.getElementById('tohide');
 		btn.style.display = 'none';
+		
+		document.getElementById('adres_serwera').style.display ='block';
+		document.getElementById('aktualnosci').style.display ='block';
+		document.getElementById('pobierz').style.display ='block';
+
 	}
 	
 	function ShowAll()
 	{
-		const btn = document.getElementById('tohide');
-		btn.style.display = 'block';
+	const btn = document.getElementById('tohide');
+	btn.style.display = 'block';
 	}	
 
 	</script>
@@ -43,7 +49,7 @@
     <!--- Particles -->  <div class="animation-wrapper"> <div class="particle particle-1"></div> <div class="particle particle-2"></div> <div class="particle particle-3"></div> <div class="particle particle-4"></div> </div>
 	
 		
-				<div onload="HideALL();" id="adres_serwera" class="overlay">
+				<div onload="HideALL();" id="adres_serwera" class="overlay" style="display:none">
 					<div onload="HideALL();" class="popup">
 					<h2>Skopiowano</h2>
 					<a class="close" onclick="ShowAll();" href="#">&times;</a>
@@ -53,7 +59,7 @@
 					</div>
 				</div>
 	 	  
-				<div onload="HideALL();" id="aktualnosci" class="overlay">
+				<div onload="HideALL();" id="aktualnosci" class="overlay" style="display:none">
 					<div onload="HideALL();" class="popup">
 					<h2>Aktualności</h2>
 					<a class="close" onclick="ShowAll();" href="#">&times;</a>
@@ -70,7 +76,7 @@
 				</div> 
 				
 				
-				<div onload="HideALL();" id="pobierz" class="overlay">
+				<div onload="HideALL();" id="pobierz" class="overlay" style="display:none">
 					<div onload="HideALL();" class="popup">
 					<h2>Pobierz</h2>
 					<a class="close" onclick="ShowAll();" href="#">&times;</a>
