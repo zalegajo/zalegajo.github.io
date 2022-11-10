@@ -6,6 +6,18 @@
 	    navigator.clipboard.writeText('zalegajo.maxc.pl');
     }
 	
+	function HideALL()
+	{
+		const btn = document.getElementById('tohide');
+		btn.style.display = 'none';
+	}
+	
+	function ShowAll()
+	{
+		const btn = document.getElementById('tohide');
+		btn.style.display = 'block';
+	}
+	
 	</script>
     <title>Zalegajo</title>
 <head>
@@ -29,11 +41,12 @@
 <body>
     <div class="bg"></div>
     <!--- Particles -->  <div class="animation-wrapper"> <div class="particle particle-1"></div> <div class="particle particle-2"></div> <div class="particle particle-3"></div> <div class="particle particle-4"></div> </div>
-    
-					<div id="popup1" class="overlay">
+	
+		
+				<div id="popup1" class="overlay">
 					<div class="popup">
 					<h2>✅ Skopiowano</h2>
-					<a class="close" href="#">&times;</a>
+					<a class="close" onclick="ShowAll();" href="#">&times;</a>
 		
 					<p style="color: black">zalegajo.maxc.pl</p>
 		
@@ -43,8 +56,8 @@
 				<div id="popup2" class="overlay">
 					<div class="popup">
 					<h2><img src="assets/logo.ico" width="15%" style="position: relative;display: inline-block;vertical-align: middle;"> Aktualności</h2>
-					<a class="close" href="#">&times;</a>
-		
+					<a class="close" onclick="ShowAll();" href="#">&times;</a>
+					
 					<p style="color: black; font-size: 1.2rem;">				
 					Serwer działa na: 1.19.2<br/><br/>
 					Żywnotność itemów upuszczonych to: 75 sekund<br/><br/>
@@ -59,27 +72,30 @@
 				<div id="popup3" class="overlay">
 					<div class="popup">
 					<h2>Status Serwera</h2>
-					<a class="close" href="#">&times;</a>
+					<a class="close" onclick="ShowAll();" href="#">&times;</a>
 
 					</div>
 				</div>
 	
+	
 	<div class="center">
-        <div class="animate__animated animate__jackInTheBox">
+        <div id="tohide" class="animate__animated animate__jackInTheBox">
             <h1>Zalegajo</h1> <!--- Server Name -->
             <p>My tutaj gramy w klocki…</p> <!--- Description -->
             <div class="animate__animated animate__bounceIn animate__delay-1s">
-
-                <a href="#popup2"><button class="btn1"><i class="fab fa-discord"></i> Aktualności </button></a>
-                <a href="#popup1"><button class="btn2" id="ip-adr" onclick="GetIPAdr()"><i class="fas fa-shopping-basket"></i> Adres IP</button></a>
-                <a href="#popup3"><button class="btn3"><i class="fas fa-poll"></i> Status </button></a>
-
+			<div class="box">
+                <a href="#popup2"><button class="btn1" onclick="HideALL();"><i class="fab fa-discord"></i> Aktualności </button></a>
+                <a href="#popup1"><button class="btn2" onclick="GetIPAdr(); HideALL();"><i class="fas fa-shopping-basket"></i> Adres IP</button></a>
+                <a href="#popup3"><button class="btn3" onclick="HideALL();"><i class="fas fa-poll"></i> Status </button></a>
+			</div>
 			</div>
 		</div>
+	</div>
 
 
     <script src="/app/js/script.js"></script>
     <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
+	
 	
 </body>
 </html>
