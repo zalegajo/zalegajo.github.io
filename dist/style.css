@@ -139,6 +139,7 @@ button:hover {
 }
 
 .btn-null {
+	color: gray;
 	cursor: auto;
 }
 
