@@ -345,6 +345,7 @@ h4:hover {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 .overlay:target {
   visibility: visible;
