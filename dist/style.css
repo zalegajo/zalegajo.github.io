@@ -138,6 +138,14 @@ button:hover {
           filter: drop-shadow(0 0 0 ##811a0f);
 }
 
+.btn-null {
+	cursor: auto;
+}
+
+.btn-null:hover {
+	border-radius: 0.3rem;
+}
+
 @media screen and (max-width: 800px) {
   .buttons {
     width: 80px;
