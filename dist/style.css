@@ -394,4 +394,22 @@ h4:hover {
   }
 }
 
+#logo30  {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+#panel-p-tekst {
+	color: black; 
+	font-size: 1.2rem;
+}
+
+#panel-p-center {
+	text-align: center;
+	color: black; 
+	font-size: 1.2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
