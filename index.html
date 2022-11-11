@@ -1,43 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"> 
-    <script>
-	
-	function GetIPAdr()
-    {
-	    navigator.clipboard.writeText('zalegajo.maxc.pl');
-    }
-	
-	function HideALL()
-	{
-		const btn = document.getElementById('tohide');
-		btn.style.display = 'none';
-		
-		document.getElementById('adres_serwera').style.display ='block';
-		document.getElementById('aktualnosci').style.display ='block';
-		document.getElementById('pobierz').style.display ='block';
-
-	}
-	
-	function ShowAll()
-	{
-	const btn = document.getElementById('tohide');
-	btn.style.display = 'block';
-	}	
-
-	window.onload = function() 
-	{
-		let date_1 = new Date('04/10/2023');
-		let date_2 = new Date();
-		
-		let difference = date_1.getTime() - date_2.getTime();
-		
-		let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-		console.log(TotalDays + ' dni do końca serwera.');
-		
-		document.getElementById('dni').innerHTML=TotalDays;
-	};
-	
-	</script>
     <title>Zalegajo</title>
 <head>
     <meta charset="UTF-8">
@@ -52,7 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dist/style.css"> 
-    <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
+    <script src="app/js/script.js"></script>
 </head>
 
 
