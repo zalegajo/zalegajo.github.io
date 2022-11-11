@@ -12,6 +12,7 @@
 		document.getElementById('adres_serwera').style.display ='block';
 		document.getElementById('aktualnosci').style.display ='block';
 		document.getElementById('pobierz').style.display ='block';
+		document.getElementById('regulamin').style.display ='block';
 
 	}
 	
