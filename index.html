@@ -38,14 +38,16 @@
 					<h2>Aktualności</h2>
 					<a class="close" onclick="ShowAll();" href="#">&times;</a>
 					
-					<p id="panel-p-tekst">				
+					<img id="logo30" src="assets/logo.ico" alt="Bzyczek">
+					<p id="panel-p-tekst">
 					Serwer działa na: 1.19.2<br/><br/>
 					Żywnotność itemów upuszczonych to: 75 sekund<br/><br/>
 					Renderowanie terenu ograniczone do 13 chunk’ów<br/><br/>
 					O 4:00 serwer tworzy kopie zapasową ważną 5 dni.<br/><br/>
 					</p>
-					<img id="logo30" src="assets/logo.ico" alt="Bzyczek">
-		
+					<p id="panel-p-center">
+					<a href="#regulamin"><button class="btn4" onclick="HideALL();"> Regulamin </button></a>
+					</p>		
 					</div>
 				</div> 
 				
@@ -64,6 +66,19 @@
 					
 					</div>
 				</div>
+				
+				<div onload="HideALL();" id="regulamin" class="overlay">
+					<div onload="HideALL();" class="popup">
+					<h2>Regulamin</h2>
+					<a class="close" onclick="ShowAll();" href="#">&times;</a>
+					
+					<p id="panel-p-tekst">
+					Po prostu bądź miły 🤗👌</br></br>
+					To serwer od znajomych dla znajomych.</br></br>
+					</p>	
+					
+					</div>
+				</div> 
 	
 	<div onload="ShowAll();" class="center">
         <div id="tohide" class="animate__animated animate__jackInTheBox">
