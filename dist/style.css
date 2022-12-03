@@ -393,6 +393,11 @@ h4:hover {
   .popup{
     width: 70%;
   }
+#panel-p-tekst {
+   color: black; 
+   font-size: 0.9rem;
+}
+	
 }
 
 #logo30  {
@@ -404,7 +409,7 @@ h4:hover {
 
 #panel-p-tekst {
 	color: black; 
-	font-size: 1.9vw;
+	font-size: 1.2rem;
 }
 
 #panel-p-center {
