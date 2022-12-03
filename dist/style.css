@@ -395,7 +395,12 @@ h4:hover {
   }
 #panel-p-tekst {
    color: black; 
-   font-size: 0.9rem;
+   font-size: 0.7rem;
+}
+#panel-p-center {
+   text-align: center;
+   color: black; 
+   font-size: 0.7rem;
 }
 	
 }
