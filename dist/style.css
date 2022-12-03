@@ -395,21 +395,6 @@ h4:hover {
   }	
 }
 
-@media screen and (min-width: 100px) and (max-width: 480px){
-	
-#panel-p-tekst {
-   color: black; 
-   font-size: 14px;
-}
-	
-#panel-p-center {
-   text-align: center;
-   color: black; 
-   font-size: 14px;
-}
-	
-}
-
 #logo30  {
 	display: block;
 	margin-left: auto;
@@ -426,6 +411,21 @@ h4:hover {
 	text-align: center;
 	color: black; 
 	font-size: 1.2rem;
+}
+
+@media screen and (min-width: 100px) and (max-width: 480px){
+	
+#panel-p-tekst {
+   color: black; 
+   font-size: 14px;
+}
+	
+#panel-p-center {
+   text-align: center;
+   color: black; 
+   font-size: 14px;
+}
+	
 }
 
 /*# sourceMappingURL=style.css.map */
