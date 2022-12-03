@@ -392,11 +392,16 @@ h4:hover {
   }
   .popup{
     width: 70%;
-  }
+  }	
+}
+
+@media screen and (min-width: 700px){
+	
 #panel-p-tekst {
    color: black; 
    font-size: 0.7rem;
 }
+	
 #panel-p-center {
    text-align: center;
    color: black; 
