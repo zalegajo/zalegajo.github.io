@@ -399,13 +399,13 @@ h4:hover {
 	
 #panel-p-tekst {
    color: black; 
-   font-size: 0.7rem;
+   font-size: 14px;
 }
 	
 #panel-p-center {
    text-align: center;
    color: black; 
-   font-size: 0.7rem;
+   font-size: 14px;
 }
 	
 }
