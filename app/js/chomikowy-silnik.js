@@ -33,7 +33,8 @@
         	{
             	if(rawFile.status === 200 || rawFile.status == 0)
             	{
-                let date_1 = rawFile.responseText;
+                var data1 = rawFile.responseText;
+		console.log(data1);
            	 }
        		 }
    		 }
