@@ -24,7 +24,21 @@
 
 	window.onload = function() 
 	{
-		let date_1 = new Date('04/10/2023');
+		
+		var rawFile = new XMLHttpRequest();
+    		rawFile.open("GET", "http://zalegajo.gameclan.pl/data.txt", false);
+    		rawFile.onreadystatechange = function ()
+    		{
+        	if(rawFile.readyState === 4)
+        	{
+            	if(rawFile.status === 200 || rawFile.status == 0)
+            	{
+                let date_1 = rawFile.responseText;
+           	 }
+       		 }
+   		 }
+		
+		//let date_1 = new Date('04/10/2023');
 		let date_2 = new Date();
 		
 		let difference = date_1.getTime() - date_2.getTime();
