@@ -33,16 +33,17 @@
 					</div>
 				</div>
 	 	  
-				<div onload="HideALL();" id="aktualnosci" class="overlay">
+				<div onload="HideALL();" id="informacje" class="overlay">
 					<div onload="HideALL();" class="popup">
 					<h2>Aktualności</h2>
 					<a class="close" onclick="ShowAll();" href="#">&times;</a>
 					
 					<p id="panel-p-tekst">
 					Serwer działa na: 1.19.2<br/><br/>
-					Żywnotność itemów: 75 sekund.<br/><br/>
-					Renderowanie: 13 chunk’ów.<br/><br/>
+					Żywnotność itemów: 75 sekund.<br/>
+					Renderowanie: 13 chunk’ów.<br/>
 					O 4:00 serwer tworzy kopie zapasową ważną 5 dni.<br/><br/>
+					Dostęp ograniczony whitelist'ą.
 					</p>
 					<p id="panel-p-center">
 					<a href="#regulamin" onclick="HideALL();"><button class="btn4"> Regulamin </button></a>
@@ -78,13 +79,26 @@
 					
 					</div>
 				</div> 
+
+				<div onload="HideALL();" id="komendy" class="overlay">
+					<div onload="HideALL();" class="popup">
+					<h2>Komendy dostępne</h2>
+					<a class="close" onclick="ShowAll();" href="#">&times;</a>
+					
+					<p id="panel-p-tekst">
+					Po prostu bądź miły/a 🤗</br></br>
+					To serwer od znajomych dla znajomych.</br></br>
+					</p>	
+					
+					</div>
+				</div> 
 	
 	<div onload="ShowAll();" class="center">
         <div id="tohide" class="animate__animated animate__jackInTheBox">
             <h1>Zalegajo</h1> <!--- Server Name -->
             <p>My tutaj gramy w klocki…</p> <!--- Description -->
             <div class="animate__animated animate__bounceIn animate__delay-1s">
-                <a href="#aktualnosci" onclick="HideALL();"><button class="btn1"> Aktualności </button></a>
+                <a href="#informacje" onclick="HideALL();"><button class="btn1"> Informacje </button></a>
                 <a href="#adres_serwera" onclick="GetIPAdr(); HideALL();"><button class="btn2"> Adres IP </button></a>
                 <a href="#pobierz" onclick="HideALL();"><button class="btn3"> Pobierz </button></a>
 			</div>
